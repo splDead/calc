@@ -1,3 +1,5 @@
+import { Container } from '@mui/material';
+
 export default function RootLayout({
     children,
 }: {
@@ -5,7 +7,11 @@ export default function RootLayout({
 }) {
     return (
         <html lang='ru'>
-            <body>{children}</body>
+            <body>
+                <Container maxWidth='sm'>
+                    {children}
+                </Container>
+            </body>
         </html>
     );
 }
