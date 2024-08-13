@@ -10,7 +10,7 @@ runs:
 
     - name: Cache dependencies ⚡
       id: cache_dependencies
-      uses: actions/cache@v3
+      uses: actions/cache@main
       with:
         path: node_modules
         key: node-modules-${{ hashFiles('package-lock.json') }}
