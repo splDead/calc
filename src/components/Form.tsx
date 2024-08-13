@@ -13,6 +13,7 @@ export type Inputs = {
     nkd: string
     amount: string
     endOfDate: Date | null
+    name: string
 }
 
 type Props = {
